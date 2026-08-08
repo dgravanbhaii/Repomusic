@@ -38,7 +38,7 @@ def start_panel(_):
             ),
             InlineKeyboardButton(
                 text=_["S_B_2"],
-                url=config.SUPPORT_CHAT,
+                url="https://t.me/+2tT6e0fT84dmMjA9",
                 style=group_style
             ),
         ],
@@ -74,12 +74,12 @@ def private_panel(_):
         [
             InlineKeyboardButton(
                 text=_["S_B_2"], 
-                url=config.SUPPORT_CHAT,
+                url="https://t.me/+2tT6e0fT84dmMjA9",
                 style=group_style
             ),
             InlineKeyboardButton(
                 text=_["S_B_6"], 
-                url=config.SUPPORT_CHANNEL,
+                url="https://t.me/Il_Ravan_bhai_ll",
                 style=group_style
             ),
         ],
