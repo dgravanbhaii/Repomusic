@@ -1,17 +1,75 @@
-python3 << 'PYEOF'
-import re
+# -----------------------------------------------
+# 🔸 DG Ravan Bhai Project
+# 🔹 Developed & Maintained by: DG Ravan Bhai
+# 📅 Copyright © 2026 – All Rights Reserved
+# -----------------------------------------------
 
-with open("ShashankMusic/utils/inline/start.py") as f:
-    content = f.read()
+import random
+from pyrogram import enums
+from pyrogram.enums import ButtonStyle
+from pyrogram.types import InlineKeyboardButton, WebAppInfo
+import config
+from ShashankMusic import app
 
-old = '''            InlineKeyboardButton(
-                text=_["S_B_6"], 
-                url="https://t.me/Il_Ravan_bhai_ll",
+
+STYLES = [
+    enums.ButtonStyle.PRIMARY,
+    enums.ButtonStyle.SUCCESS,
+    enums.ButtonStyle.DANGER
+]
+
+def start_panel(_):
+    group_style = random.choice(STYLES)
+
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text=_["S_B_1"],
+                url=f"https://t.me/{app.username}?startgroup=true",
                 style=group_style
             ),
-        ],'''
+            InlineKeyboardButton(
+                text=_["S_B_2"],
+                url="https://t.me/+2tT6e0fT84dmMjA9",
+                style=group_style
+            ),
+        ],
+    ]
+    return buttons
 
-new = '''            InlineKeyboardButton(
+
+def private_panel(_):
+    alone_style = random.choice(STYLES)
+    remaining_styles = [s for s in STYLES if s != alone_style]
+    group_style = random.choice(remaining_styles)
+
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text=_["S_B_3"],
+                url=f"https://t.me/{app.username}?startgroup=true",
+                style=alone_style
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["S_B_5"], 
+                user_id=config.OWNER_ID,
+                style=group_style
+            ),
+            InlineKeyboardButton(
+                text="ɪɴғᴏ 皿",
+                callback_data="api_status",
+                style=group_style
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["S_B_2"], 
+                url="https://t.me/+2tT6e0fT84dmMjA9",
+                style=group_style
+            ),
+            InlineKeyboardButton(
                 text=_["S_B_6"], 
                 url="https://t.me/Il_Ravan_bhai_ll",
                 style=group_style
@@ -23,12 +81,13 @@ new = '''            InlineKeyboardButton(
                 url=config.DEVELOPER_URL,
                 style=alone_style
             ),
-        ],'''
-
-content = content.replace(old, new, 1)
-
-with open("ShashankMusic/utils/inline/start.py", "w") as f:
-    f.write(content)
-
-print("Done")
-PYEOF
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["S_B_4"],
+                callback_data="settings_back_helper",
+                style=alone_style
+            ),
+        ],
+    ]
+    return buttons
