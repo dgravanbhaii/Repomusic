@@ -52,13 +52,13 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 # ✅ Git & Upstream Repo
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/itzshukla/ChhaviMusic")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/dgravanbhaii/Repomusic")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", "")  # Only for private repo
 
 # ✅ Support Links
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/CharviBots")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/CharviChats")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+y9SXssXwKsIzMGRl")
 DEVELOPER_URL = getenv("DEVELOPER_URL", "https://t.me/Il_Ravan_bhai_ll")
 
 # ✅ Auto Features
