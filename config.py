@@ -59,7 +59,6 @@ GIT_TOKEN = getenv("GIT_TOKEN", "")  # Only for private repo
 # ✅ Support Links
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Il_Ravan_bhai_ll")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+y9SXssXwKsIzMGRl")
-DEVELOPER_URL = getenv("DEVELOPER_URL", "https://t.me/Il_Ravan_bhai_ll")
 
 # ✅ Auto Features
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
