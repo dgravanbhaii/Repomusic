@@ -768,6 +768,32 @@ Telegram Bot Developer • Automation • Open Source
 
 ---
 
+<div align="center">
+
+### 👑 Developer
+
+<a href="https://github.com/dgravanbhaii">
+  <img src="https://img.shields.io/badge/GitHub-dgravanbhaii-181717?style=for-the-badge&logo=github">
+</a>
+
+<a href="https://t.me/YOUR_USERNAME">
+  <img src="https://img.shields.io/badge/Telegram-Contact%20Me-26A5E4?style=for-the-badge&logo=telegram&logoColor=white">
+</a>
+
+<br><br>
+
+### ⭐ Support Repomusic
+
+<a href="https://github.com/dgravanbhaii/Repomusic">
+  <img src="https://img.shields.io/github/stars/dgravanbhaii/Repomusic?style=for-the-badge&logo=github&label=⭐%20STAR%20REPOSITORY&color=gold">
+</a>
+
+<a href="https://github.com/dgravanbhaii/Repomusic/fork">
+  <img src="https://img.shields.io/github/forks/dgravanbhaii/Repomusic?style=for-the-badge&logo=github&label=🍴%20FORK%20REPOSITORY">
+</a>
+
+</div>
+
 # ❤️ Credits
 
 Repomusic is built using open-source technologies and the Telegram ecosystem.
